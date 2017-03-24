@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="myApp">
+<div ng-controller="homeController">
+<h2>Menu</h2>
+<a ng-href="#!/goToHell"> go to hell</a><a ng-href="#!/home"> go home</a>
+<div ng-view>
+
+</div>
+    <div ng-if="viewForm" ng-include ="'views/form.html'"></div>
+<button ng-click="openForm()" class="btn btn-warning">REGISTER</button>
+</div>
+
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-messages/angular-messages.min.js"></script>
+<script src="node_modules/angularfire/dist/angularfire.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script src="app.js"></script>
+<script src="services.js"></script>
+<script src="controller.js"></script>
+<script src="node_modules/angular-route/angular-route.min.js"></script>
+</html>
